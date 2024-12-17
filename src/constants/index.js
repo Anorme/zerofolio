@@ -3,7 +3,7 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `I am the fullstack developer you need. `;
+export const HERO_CONTENT = `I am the fullstack developer you need.`;
 
 export const ABOUT_TEXT = `My goal is to grow by creating innovative and impactful solutions that drive business growth and deliver exceptional user experiences.`;
 

@@ -1,6 +1,8 @@
 import { BiLogoJavascript } from "react-icons/bi";
 import { RiReactjsLine } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3 } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import {motion} from "motion/react"
@@ -30,7 +32,24 @@ const Technologies = () => {
       >
         Technologies
       </motion.h1>
+
       <div className="flex flex-wrap items-center justify-center gap-4">
+      <motion.div 
+        variants={iconVariants(4)}
+        initial="initial"
+        animate="animate"
+        className="rounded-2xl border-4 border-neutral-800 p-4">
+          <FaHtml5  className="text-7xl text-orange-400" />
+        </motion.div>
+
+        <motion.div 
+        variants={iconVariants(2)}
+        initial="initial"
+        animate="animate"
+        className="rounded-2xl border-4 border-neutral-800 p-4">
+          <FaCss3   className="text-7xl text-blue-400" />
+        </motion.div>
+
         <motion.div 
         variants={iconVariants(4)}
         initial="initial"

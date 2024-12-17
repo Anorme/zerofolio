@@ -1,4 +1,3 @@
-import {HERO_CONTENT} from '../constants';
 import profilePic from '../assets/CyberAI.jpg';
 import { motion } from "motion/react";
 import { ReactTyped } from "react-typed";
@@ -33,7 +32,8 @@ const Hero = () => {
                   strings={["I am the fullstack developer you need"]} 
                   typeSpeed={40}
                   startWhenVisible={true}
-                  startDelay={1200} />
+                  startDelay={1200} 
+                  showCursor={false}/>
             </motion.p>
             <motion.button
               initial={{x:-50, opacity:0}}

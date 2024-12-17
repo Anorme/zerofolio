@@ -1,6 +1,7 @@
 import { BiLogoJavascript } from "react-icons/bi";
 import { RiReactjsLine } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
@@ -90,6 +91,13 @@ const Technologies = () => {
           <BiLogoPostgresql className="text-7xl text-sky-700" />
         </motion.div>
         
+        <motion.div 
+        variants={iconVariants(4)}
+        initial="initial"
+        animate="animate"
+        className="rounded-2xl border-4 border-neutral-800 p-4">
+          <FaGitAlt className="text-7xl text-orange-400" />
+        </motion.div>
       </div>
     </div>
   )

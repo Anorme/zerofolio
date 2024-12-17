@@ -15,10 +15,10 @@ const App = () => {
       <div className="container mx-auto px-8">
         <Navbar />
         <Hero/>
-        <Technologies />
-        <Projects />
-        <About />
-        <Contact />
+        <Technologies/>
+        <Projects/>
+        <About/>
+        <Contact/>
       </div>
     </div>
   )

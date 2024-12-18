@@ -16,14 +16,14 @@ const Projects = () => {
         <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
             <div className="w-full max-w-xl lg:w-1/2 lg:pt-10">
               <h6 className="mb-2 font-semibold" > {project.title}</h6>
-              <p className="mb-4 text-neutral-400">{project.description}</p>
+              <p className="mb-3 text-2xl text-neutral-400">{project.description}</p>
             <div className="flex flex-wrap ml-0 my-8">
               {project.technologies.map((tech, index) => (
-                <span key={index} className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-600">{tech}</span>
+                <span key={index} className="mr-2 my-1 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-600">{tech}</span>
               ))}
             </div>
             
-              <button className="w-xl text-xl bg-purple-500 border-purple-800 rounded mb-4 mt-0 ">
+              <button className="w-xl p-1 text-xl bg-purple-500 border-purple-800 rounded mb-4 mt-0 ">
                 See live code
               </button>
             

@@ -1,3 +1,4 @@
+import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -11,15 +12,24 @@ const App = () => {
       <div className="fixed top-0 -z-10 h-full w-full">
         <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
       </div>
-
-      <div className="container mx-auto px-8">
         <Navbar />
-        <Hero/>
-        <Technologies/>
-        <Projects/>
-        <About/>
-        <Contact/>
-      </div>
+        <div className="container mt-24 mx-auto px-8">
+          <section id="hero"> 
+            <Hero /> 
+          </section>
+          <section id="technologies"> 
+            <Technologies /> 
+          </section>
+          <section id="projects"> 
+            <Projects /> 
+          </section>
+          <section id="about"> 
+            <About /> 
+          </section>
+          <section id="contact"> 
+            <Contact /> 
+          </section>
+        </div>
     </div>
   )
 }

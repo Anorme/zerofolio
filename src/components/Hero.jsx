@@ -1,6 +1,7 @@
 import profilePic from '../assets/CyberAI.jpg';
 import { motion } from "motion/react";
 import { ReactTyped } from "react-typed";
+import { Socials } from '../Socials';
 
 const container = (delay) => ({
   hidden: {x: -100, opacity: 0},
@@ -42,6 +43,23 @@ const Hero = () => {
               className="mb-8 mt-0 mx-0 bg-purple-700 rounded text-white w-2xl m-4 p-2 cursor-pointer border-purple-800 transition ease-in-out delay-250 hover:bg-purple-500 "
             >Get in touch
             </motion.button>
+
+            <div className="flex gap-2 justify-items-start">
+            {Socials.map((social,i) => {
+              const {Icon, title} = social;
+              return(
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }} 
+                  transition={{ duration: 1, delay: 1.6 }}
+                  key={i} 
+                  className="flex items-center place-content-center mb-8 mt-0 mx-0 bg-neutral-600 rounded-full text-white w-2xl m-4 p-2 cursor-pointer border-purple-800 transition ease-in-out delay-250 hover:bg-purple-500 "> 
+                    {title}
+                    <Icon className="bg-white-500 ml-2" /> 
+                </motion.div>
+              )
+            })}
+            </div>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">

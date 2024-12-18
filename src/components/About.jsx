@@ -1,4 +1,4 @@
-import aboutImg from "../assets/about.jpg"
+import aboutImg from "../assets/aboutAI.jpg"
 import { ABOUT_TEXT } from "../constants"
 import {motion} from "motion/react"
 
@@ -24,8 +24,13 @@ const About = () => {
             whileInView={{opacity: 1, x: 0}}
             initial={{opacity: 0, x: 100}} 
             transition={{duration: 0.5}}
-            className="flex justify-center lg:justify-start">
-              <p className="my-2 max-w-xl py-6">{ABOUT_TEXT}</p>
+            className="flex justify-center lg:justify-start"
+            >
+              <div className="my-2 max-w-xl py-6">
+                  {ABOUT_TEXT.map((paragraph, index) => (
+                     <p key={index} className="mb-4"> {paragraph} </p>
+                  ))}
+              </div>
             </motion.div>
           </div>
       </div>

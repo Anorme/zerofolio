@@ -23,7 +23,7 @@ const Projects = () => {
               ))}
             </div>
             
-              <button className="w-xl text-xl bg-purple-500 border-purple-800 rounded mb-4 mt-0 ">
+              <button className="w-xl p-1 text-xl bg-purple-500 border-purple-800 rounded mb-4 mt-0 ">
                 See live code
               </button>
             

@@ -2,6 +2,10 @@ import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhone } from "react-icons/fa";
+import { FaCopyright } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
 
 export const HERO_CONTENT = `I am the fullstack developer you need.`;
 
@@ -32,8 +36,21 @@ export const PROJECTS = [
   }
 ];
 
-export const CONTACT = {
-  address: "X378, World Vision St, Dodowa",
-  phoneNo: "+233 5978 429 21 ",
-  email: "anormeinkumsah@gmail.com",
-};
+export const CONTACT = [
+  {
+    address: "X378, World Vision St, Dodowa",
+    Icon: FaLocationDot  ,
+  },
+  {
+    phoneNo: "+233 5978 429 21 ",
+    Icon: FaPhone, 
+  },
+  {
+    email: "anormeinkumsah@gmail.com",
+    Icon: CiMail ,
+  },
+  {
+    name: "AnormeInkumsah",
+    Icon: FaCopyright, 
+  }
+];

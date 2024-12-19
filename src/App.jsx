@@ -1,10 +1,10 @@
-import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Technologies from './components/Technologies';
 import Projects from './components/Projects';
-import Contact from './components/Contact';
+import ContactForm from './components/ContactForm';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -27,7 +27,10 @@ const App = () => {
             <About /> 
           </section>
           <section id="contact"> 
-            <Contact /> 
+            <ContactForm /> 
+          </section>
+          <section id="footer">
+            <Footer />
           </section>
         </div>
     </div>

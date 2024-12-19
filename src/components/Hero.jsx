@@ -44,7 +44,7 @@ const Hero = () => {
             >Get in touch
             </motion.button>
 
-            <div className="flex gap-2 justify-items-start">
+            <div className="flex flex-wrap gap-2 justify-center lg:justify-items-start">
             {Socials.map((social,i) => {
               const {Icon, title} = social;
               return(

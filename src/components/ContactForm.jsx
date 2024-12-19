@@ -2,7 +2,8 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const ContactForm = () => {
   return (
-    <section className="body-font relative bg-gray-900 text-gray-400">
+    <div className="border-b border-neutral-900 pb-20 flex justify-center">
+    <section className="body-font relative bg-gray-900 text-gray-400 ">
       <div className="flex justify-center">
         <DotLottieReact
           className="w-1/2"
@@ -55,6 +56,7 @@ const ContactForm = () => {
         </div>
       </div>
   </section>
+  </div>
   )
 }
 

@@ -1,4 +1,5 @@
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import axios from 'axios'
 import { useState } from 'react';
 const ContactForm = () => {
   // Email Form state instantiation
@@ -36,7 +37,7 @@ const ContactForm = () => {
   // Form submission functionality
   const handleSubmit = async (e) => {
     setResult('');
-    e.preventDefaullt();
+    e.preventDefault();
     setStatus('Sending...');
 
     const { name, email, message } = e.target.elements;
@@ -48,7 +49,7 @@ const ContactForm = () => {
     };
 
     try {
-      let response = await fetch ('http://localhost:5000/send', {
+      let response = await fetch ('http://localhost:5000/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json;charset=utf-8',

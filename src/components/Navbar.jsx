@@ -1,10 +1,6 @@
 import logo from '../assets/AILogo.png';
-import {routes} from "../routes";
 import NavDesktop from "./NavDesktop";
 import NavMobile from "./NavMobile";
-import { Link } from "react-scroll";
-import React, {useState, useEffect} from 'react';
-
 
 const Navbar = () => {
   return (

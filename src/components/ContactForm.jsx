@@ -1,8 +1,18 @@
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const ContactForm = () => {
   return (
     <section className="body-font relative bg-gray-900 text-gray-400">
-      <div className="container mx-auto px-5 py-24">
+      <div className="flex justify-center">
+        <DotLottieReact
+          className="w-1/2"
+          src="https://lottie.host/dee1399b-c7e2-4f3a-be89-a5244a55e80a/pBGVY4mt5i.lottie"
+          loop
+          autoplay
+        />
+      </div>
+
+      <div className="container pt-0 mx-auto px-5 py-24">
         <div className="mb-12 flex w-full flex-col text-center">
           <h1 className="title-font mb-4 text-2xl font-medium text-white sm:text-3xl">Contact me</h1>
           <p className="mx-auto text-base leading-relaxed lg:w-2/3">Feel free to reach out to me! Whether you have a question,

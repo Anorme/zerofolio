@@ -1,10 +1,10 @@
-import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Technologies from './components/Technologies';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -28,6 +28,9 @@ const App = () => {
           </section>
           <section id="contact"> 
             <Contact /> 
+          </section>
+          <section id="footer">
+            <Footer />
           </section>
         </div>
     </div>

@@ -11,7 +11,7 @@ export const HERO_CONTENT = `I am the fullstack developer you need.`;
 
 export const ABOUT_TEXT = [
   "I am a passionate full stack developer with a knack for crafting robust and scalable web applications.",
-  "With hands-on experience building fullstack projects like Smart-brain, I have honed my skills in front-end technologies like React, as well as back-end technologies like Node.js, and PostgreSQL.",
+  "With hands-on experience building fullstack projects like Smart-brain, I have honed my skills in front-end technologies like React, as well as back-end technologies like Node.js, Express.js and PostgreSQL.",
   "I consistently leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.",
   "My goal now is to grow by taking on bigger challenges that are impactful."
 ];

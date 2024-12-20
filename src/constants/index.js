@@ -24,7 +24,7 @@ export const PROJECTS = [
     description:
       "A fully functional fullstack website that enables users to detect faces in images using AI.",
     technologies: ["HTML", "CSS","JavaScript", "React", "Node.js", "Express.js","PostgreSQL"],
-    link: "",
+    link: "https://github.com/Anorme/smartbrain-frontend",
   },
   {
     title: "Portfolio Website",

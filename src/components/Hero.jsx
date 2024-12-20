@@ -46,7 +46,7 @@ const Hero = () => {
 
             <div className="flex flex-wrap gap-2 justify-center lg:justify-items-start">
             {Socials.map((social,i) => {
-              const {Icon, title} = social;
+              const {Icon, title, link } = social;
               return(
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -54,8 +54,10 @@ const Hero = () => {
                   transition={{ duration: 1, delay: 1.6 }}
                   key={i} 
                   className="flex items-center place-content-center mb-8 mt-0 mx-0 bg-neutral-600 rounded-full text-white w-2xl m-4 p-2 cursor-pointer border-purple-800 transition ease-in-out delay-250 hover:bg-purple-500 "> 
+                    <a href={link} target="_blank" rel="noopener noreferrer" className="flex items-center" >
                     {title}
-                    <Icon className="bg-white-500 ml-2" /> 
+                    <Icon className="bg-white-500 ml-2" />
+                    </a> 
                 </motion.div>
               )
             })}

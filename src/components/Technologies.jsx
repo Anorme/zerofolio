@@ -1,4 +1,4 @@
-import {useEffect, useRef, useState} from 'react';
+import useInView from './useInView';
 import { BiLogoJavascript, BiLogoPostgresql } from "react-icons/bi";
 import { RiReactjsLine } from "react-icons/ri";
 import { FaNodeJs, FaGitAlt, FaHtml5, FaCss3 } from "react-icons/fa";
@@ -19,31 +19,7 @@ const iconVariants = (duration) => ({
 })
 
 const Technologies = () => {
-  const [ isInView, setIsInView ] = useState(false);
-  const containerRef = useRef(null);
-
-  useEffect(() => {
-    const currentElement = containerRef.current;
-    const observer = new IntersectionObserver (
-      ([entry]) => {
-        setIsInView(entry.isIntersecting);
-      },
-      {
-        threshold: 0.1,
-      }
-    );
-
-    if (currentElement) {
-      observer.observe(currentElement);
-    }
-
-    return () => {
-      if (currentElement) {
-        observer.unobserve(currentElement);
-      }
-    };
-  }, [])
-  
+  const [isInView, containerRef]   = useInView({threshold: 0.1});
   return (
     <div className="border-b border-neutral-800 pb-24">
       <motion.h1

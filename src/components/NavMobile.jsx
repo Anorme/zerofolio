@@ -1,7 +1,6 @@
-import logo from '../assets/AILogo.png';
 import { Link } from "react-scroll";
 import { useClickAway } from "react-use";
-import React, {useState, useEffect, useRef} from 'react';
+import {useState, useRef} from 'react';
 import {routes} from "../routes";
 import { Squash as Hamburger } from 'hamburger-react';
 import { AnimatePresence, motion } from "framer-motion";

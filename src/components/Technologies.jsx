@@ -26,7 +26,6 @@ const Technologies = () => {
     const currentElement = containerRef.current;
     const observer = new IntersectionObserver (
       ([entry]) => {
-        console.log('IntersectionObserverEntry:', entry)
         setIsInView(entry.isIntersecting);
       },
       {

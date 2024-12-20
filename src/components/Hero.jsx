@@ -40,7 +40,7 @@ const Hero = () => {
               initial={{x:-50, opacity:0}}
               animate={{x:0, opacity: 1}}
               transition={{duration: 1, delay:1.2}}
-              className="mb-8 mt-0 mx-0 bg-purple-700 rounded text-white w-2xl m-4 p-2 cursor-pointer border-purple-800 transition ease-in-out delay-250 hover:bg-purple-500 "
+              className="mb-8 mt-0 mx-0 bg-purple-700 rounded text-white w-2xl m-4 p-2  border-purple-800 transition ease-in-out delay-250"
             >Get in touch
             </motion.button>
 

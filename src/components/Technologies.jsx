@@ -18,14 +18,15 @@ const iconVariants = (duration) => ({
   }
 })
 
-
 const Technologies = () => {
   const [ isInView, setIsInView ] = useState(false);
   const containerRef = useRef(null);
 
   useEffect(() => {
+    const currentElement = containerRef.current;
     const observer = new IntersectionObserver (
       ([entry]) => {
+        console.log('IntersectionObserverEntry:', entry)
         setIsInView(entry.isIntersecting);
       },
       {
@@ -33,13 +34,13 @@ const Technologies = () => {
       }
     );
 
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
+    if (currentElement) {
+      observer.observe(currentElement);
     }
 
     return () => {
-      if (containerRef.current) {
-        observer.unobserve(containerRef.current);
+      if (currentElement) {
+        observer.unobserve(currentElement);
       }
     };
   }, [])
@@ -55,7 +56,9 @@ const Technologies = () => {
         Technologies
       </motion.h1>
 
-      <div className="flex flex-wrap items-center justify-center gap-4">
+      <div 
+        className="flex flex-wrap items-center justify-center gap-4"
+        ref={containerRef}>
         {isInView && (
           <>
             <motion.div 

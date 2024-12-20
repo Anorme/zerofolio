@@ -1,7 +1,9 @@
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { useForm, ValidationError } from '@formspree/react';
+import useInView from './useInView';
 
 const ContactForm = () => {
+  const [isInView, formRef] = useInView({threshold: 0.1});
   const [state, handleSubmit] = useForm("mkgndbln");
   if (state.succeeded) {
       return <p>Message sent!</p>;
@@ -10,13 +12,15 @@ const ContactForm = () => {
   return (
     <div className="border-b border-neutral-900 pb-20 flex justify-center">
     <section className="body-font relative bg-gray-900 text-gray-400 ">
-      <div className="flex justify-center">
-        <DotLottieReact
+      <div className="flex justify-center" ref={formRef}>
+        {isInView && (
+          <DotLottieReact
           className="w-1/2"
           src="https://lottie.host/dee1399b-c7e2-4f3a-be89-a5244a55e80a/pBGVY4mt5i.lottie"
           loop
           autoplay
-        />
+          />
+        )}
       </div>
 
       <div className="container pt-0 mx-auto px-5 py-24">

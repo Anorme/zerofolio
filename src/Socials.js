@@ -6,18 +6,23 @@ import { FaInstagram } from "react-icons/fa";
 export const Socials = [
 	{
 		Icon: FaLinkedin,
-		title: "Linkedin"
+		title: "Linkedin",
+		link: "https://www.linkedin.com/in/anorme-inkumsah-2ba1b7338/"
 	},
 	{
 		Icon: FaGithub,
-		title: "Github"
+		title: "Github",
+		link: "https://github.com/Anorme"
+
 	},
 	{
 		Icon: SiGmail,
-		title: "Mail"
+		title: "Mail",
+		link: "mailto:anormeinkumsah@gmail.com"
 	},
 	{
 		Icon: FaInstagram,
 		title: "Instagram",
+		link: "https://www.instagram.com/anorme.aki/"
 	}
 ];

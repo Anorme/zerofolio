@@ -1,6 +1,4 @@
-import logo from '../assets/AILogo.png';
 import { Link } from "react-scroll";
-import React, {useState, useEffect} from 'react';
 import {routes} from "../routes";
 
 const NavDesktop = () => {

@@ -23,7 +23,7 @@ const Projects = () => {
               ))}
             </div>
             <a href={project.link} target="_blank">
-              <button className="w-xl p-1 text-xl bg-purple-500 border-purple-800 rounded mb-4 mt-0 ">
+              <button className="w-xl p-1 text-xl active:bg-neutral-600 hover:bg-purple-500 bg-purple-700 border-purple-800 rounded mb-4 mt-0 ">
                 See on Github
               </button>
             </a>            

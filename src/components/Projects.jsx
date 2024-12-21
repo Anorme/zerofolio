@@ -25,11 +25,19 @@ const Projects = () => {
                 <span key={index} className="mr-2 mb-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-600">{tech}</span>
               ))}
             </div>
-            <a href={project.link} target="_blank">
-              <button className="w-xl p-1 text-xl active:bg-neutral-600 hover:bg-purple-500 bg-purple-700 border-purple-800 rounded mb-4 mt-0 ">
-                See on Github
-              </button>
-            </a>            
+            <div className="flex ">
+              <a href={project.link} target="_blank">
+                <button className="w-xl p-1 text-xl active:bg-neutral-600 hover:bg-purple-500 bg-purple-700 border-purple-800 rounded mb-4 mt-0 ">
+                  See on Github
+                </button>
+              </a>
+              <a href={project.live} target="_blank">
+                <button className="w-xl p-1 text-xl active:bg-neutral-600 hover:bg-purple-500 bg-purple-700 border-purple-800 rounded mb-4 mt-0 ">
+                  See Live 
+                </button>
+              </a>   
+            </div>
+                     
           </div>
 
           <div className="w-full lg:w-1/2 ">

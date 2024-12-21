@@ -53,7 +53,7 @@ const Projects = () => {
                    <img 
                       src={project.image}
                       alt={project.title}
-                      className="m-6 rounded object-cover" 
+                      className="rounded object-cover" 
                     />
                 </>
                )

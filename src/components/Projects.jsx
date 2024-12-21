@@ -1,8 +1,11 @@
 import { PROJECTS } from "../constants"
 import {motion} from "motion/react";
 import Tilt from 'react-parallax-tilt';
+import useDeviceType from "./useDeviceType";
 
 const Projects = () => {
+  const deviceType = useDeviceType();
+
   return (
     <div className="text-4xl pb-4 border-b border-neutral-900">
       <motion.h2
@@ -30,17 +33,31 @@ const Projects = () => {
           </div>
 
           <div className="w-full lg:w-1/2 ">
-            <Tilt 
-              tiltMaxAngleX={7} 
-              tiltMaxAngleY={7}
-              width={project.image.width} 
-            >
-              <img 
-                src={project.image}
-                alt={project.title}
-                className="m-6 rounded object-cover" 
-              />
-            </Tilt>
+            {
+               deviceType === 'desktop' ? (
+                <>
+                  <Tilt 
+                    tiltMaxAngleX={7} 
+                    tiltMaxAngleY={7}
+                    width={project.image.width} 
+                  >
+                    <img 
+                      src={project.image}
+                      alt={project.title}
+                      className="m-6 rounded object-cover" 
+                    />
+                  </Tilt>
+                </>
+               ) : (
+                <>
+                   <img 
+                      src={project.image}
+                      alt={project.title}
+                      className="m-6 rounded object-cover" 
+                    />
+                </>
+               )
+            }
           </div>
         </div>
       ))}

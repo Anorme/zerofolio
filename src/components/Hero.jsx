@@ -53,7 +53,7 @@ const Hero = () => {
                   animate={{ opacity: 1 }} 
                   transition={{ duration: 1, delay: 1.6 }}
                   key={i} 
-                  className="flex items-center place-content-center mb-8 mt-0 mx-0 bg-neutral-600 rounded-full text-white w-2xl m-4 p-2 cursor-pointer border-purple-800 transition ease-in-out delay-250 hover:bg-purple-500 "> 
+                  className="flex items-center place-content-center mb-2 mt-0 mx-0 bg-neutral-600 rounded-full text-white w-2xl m-4 p-2 cursor-pointer border-purple-800 transition ease-in-out delay-250 hover:bg-purple-500 "> 
                     <a href={link} target="_blank" rel="noopener noreferrer" className="flex items-center" >
                     {title}
                     <Icon className="bg-white-500 ml-2" />
@@ -70,7 +70,7 @@ const Hero = () => {
               initial={{x:100, opacity:0}}
               animate={{x:0, opacity: 1}}
               transition={{duration: 1, delay:1.2}} 
-              className=" h-52 w-52 lg:h-96 lg:w-96 rounded-full" 
+              className="mt-4 h-52 w-52 lg:h-96 lg:w-96 rounded-full" 
               src={profilePic} 
               alt="AI profile pic" />
           </div>

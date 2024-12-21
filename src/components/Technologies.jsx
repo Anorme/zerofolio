@@ -1,4 +1,3 @@
-import useInView from './useInView';
 import useDeviceType from './useDeviceType';
 import { BiLogoJavascript, BiLogoPostgresql } from "react-icons/bi";
 import { RiReactjsLine } from "react-icons/ri";
@@ -20,7 +19,6 @@ const iconVariants = (duration) => ({
 })
 
 const Technologies = () => {
-  const [isInView, containerRef]   = useInView({threshold: 0.1});
   const deviceType = useDeviceType();
   
   return (
@@ -36,122 +34,117 @@ const Technologies = () => {
 
       <div 
         className="flex flex-wrap items-center justify-center gap-4"
-        ref={containerRef}>
-        {isInView && (
+      >
+        {deviceType === 'desktop' ? 
+        (
           <>
-            {deviceType === 'desktop' ? 
-            (
-              <>
-                <motion.div 
-                  variants={iconVariants(4)}
-                  initial="initial"
-                  animate="animate"
-                  className="rounded-2xl border-4 border-neutral-800 p-4">
-                  <FaHtml5  className="text-7xl text-orange-400" />
-                </motion.div>
+            <motion.div 
+              variants={iconVariants(4)}
+              initial="initial"
+              animate="animate"
+              className="rounded-2xl border-4 border-neutral-800 p-4">
+              <FaHtml5  className="text-7xl text-orange-400" />
+            </motion.div>
 
-                <motion.div 
-                  variants={iconVariants(2)}
-                  initial="initial"
-                  animate="animate"
-                  className="rounded-2xl border-4 border-neutral-800 p-4">
-                  <FaCss3   className="text-7xl text-blue-400" />
-                </motion.div>
+            <motion.div 
+              variants={iconVariants(2)}
+              initial="initial"
+              animate="animate"
+              className="rounded-2xl border-4 border-neutral-800 p-4">
+              <FaCss3   className="text-7xl text-blue-400" />
+            </motion.div>
 
-                <motion.div 
-                  variants={iconVariants(4)}
-                  initial="initial"
-                  animate="animate"
-                  className="rounded-2xl border-4 border-neutral-800 p-4">
-                  <BiLogoJavascript  className="text-7xl text-yellow-400" />
-                </motion.div>
+            <motion.div 
+              variants={iconVariants(4)}
+              initial="initial"
+              animate="animate"
+              className="rounded-2xl border-4 border-neutral-800 p-4">
+              <BiLogoJavascript  className="text-7xl text-yellow-400" />
+            </motion.div>
 
-                <motion.div
-                  variants={iconVariants(2)}
-                  initial="initial"
-                  animate="animate" 
-                  className="rounded-2xl border-4 border-neutral-800 p-4">
-                  <RiReactjsLine className="text-7xl text-cyan-400" />
-                </motion.div>
+            <motion.div
+              variants={iconVariants(2)}
+              initial="initial"
+              animate="animate" 
+              className="rounded-2xl border-4 border-neutral-800 p-4">
+              <RiReactjsLine className="text-7xl text-cyan-400" />
+            </motion.div>
 
-                <motion.div
-                  variants={iconVariants(4)}
-                  initial="initial"
-                  animate="animate" 
-                  className="rounded-2xl border-4 border-neutral-800 p-4">
-                  <FaNodeJs className="text-7xl text-green-500" />
-                </motion.div>
+            <motion.div
+              variants={iconVariants(4)}
+              initial="initial"
+              animate="animate" 
+              className="rounded-2xl border-4 border-neutral-800 p-4">
+              <FaNodeJs className="text-7xl text-green-500" />
+            </motion.div>
 
-                <motion.div
-                  variants={iconVariants(2.5)}
-                  initial="initial"
-                  animate="animate" 
-                  className="rounded-2xl border-4 border-neutral-800 p-4">
-                  <SiExpress  className="text-7xl text-cyan-400" />
-                </motion.div>
+            <motion.div
+              variants={iconVariants(2.5)}
+              initial="initial"
+              animate="animate" 
+              className="rounded-2xl border-4 border-neutral-800 p-4">
+              <SiExpress  className="text-7xl text-cyan-400" />
+            </motion.div>
 
-                <motion.div
-                  variants={iconVariants(3)}
-                  initial="initial"
-                  animate="animate" 
-                  className="rounded-2xl border-4 border-neutral-800 p-4">
-                  <BiLogoPostgresql className="text-7xl text-sky-700" />
-                </motion.div>
-            
-                <motion.div 
-                  variants={iconVariants(4)}
-                  initial="initial"
-                  animate="animate"
-                  className="rounded-2xl border-4 border-neutral-800 p-4">
-                  <FaGitAlt className="text-7xl text-orange-400" />
-                </motion.div>
-              </>
-            ) : (
-              <>
-                <div 
-                  className="rounded-2xl border-4 border-neutral-800 p-4">
-                  <FaHtml5  className="text-7xl text-orange-400" />
-                </div>
+            <motion.div
+              variants={iconVariants(3)}
+              initial="initial"
+              animate="animate" 
+              className="rounded-2xl border-4 border-neutral-800 p-4">
+              <BiLogoPostgresql className="text-7xl text-sky-700" />
+            </motion.div>
+        
+            <motion.div 
+              variants={iconVariants(4)}
+              initial="initial"
+              animate="animate"
+              className="rounded-2xl border-4 border-neutral-800 p-4">
+              <FaGitAlt className="text-7xl text-orange-400" />
+            </motion.div>
+          </>
+        ) : (
+          <>
+            <div 
+              className="rounded-2xl border-4 border-neutral-800 p-4">
+              <FaHtml5  className="text-7xl text-orange-400" />
+            </div>
 
-                <div 
-                  className="rounded-2xl border-4 border-neutral-800 p-4">
-                  <FaCss3   className="text-7xl text-blue-400" />
-                </div>
+            <div 
+              className="rounded-2xl border-4 border-neutral-800 p-4">
+              <FaCss3   className="text-7xl text-blue-400" />
+            </div>
 
-                <div 
-                  className="rounded-2xl border-4 border-neutral-800 p-4">
-                  <BiLogoJavascript  className="text-7xl text-yellow-400" />
-                </div>
+            <div 
+              className="rounded-2xl border-4 border-neutral-800 p-4">
+              <BiLogoJavascript  className="text-7xl text-yellow-400" />
+            </div>
 
-                <div
-                  className="rounded-2xl border-4 border-neutral-800 p-4">
-                  <RiReactjsLine className="text-7xl text-cyan-400" />
-                </div>
+            <div
+              className="rounded-2xl border-4 border-neutral-800 p-4">
+              <RiReactjsLine className="text-7xl text-cyan-400" />
+            </div>
 
-                <div
-                  className="rounded-2xl border-4 border-neutral-800 p-4">
-                  <FaNodeJs className="text-7xl text-green-500" />
-                </div>
+            <div
+              className="rounded-2xl border-4 border-neutral-800 p-4">
+              <FaNodeJs className="text-7xl text-green-500" />
+            </div>
 
-                <div
-                  className="rounded-2xl border-4 border-neutral-800 p-4">
-                  <SiExpress  className="text-7xl text-cyan-400" />
-                </div>
+            <div
+              className="rounded-2xl border-4 border-neutral-800 p-4">
+              <SiExpress  className="text-7xl text-cyan-400" />
+            </div>
 
-                <div
-                  className="rounded-2xl border-4 border-neutral-800 p-4">
-                  <BiLogoPostgresql className="text-7xl text-sky-700" />
-                </div>
-            
-                <div 
-                  className="rounded-2xl border-4 border-neutral-800 p-4">
-                  <FaGitAlt className="text-7xl text-orange-400" />
-                </div>
-              </>
-            )}
+            <div
+              className="rounded-2xl border-4 border-neutral-800 p-4">
+              <BiLogoPostgresql className="text-7xl text-sky-700" />
+            </div>
+        
+            <div 
+              className="rounded-2xl border-4 border-neutral-800 p-4">
+              <FaGitAlt className="text-7xl text-orange-400" />
+            </div>
           </>
         )}
-      
       </div>
     </div>
   )

@@ -25,7 +25,7 @@ const Projects = () => {
                 <span key={index} className="mr-2 mb-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-600">{tech}</span>
               ))}
             </div>
-            <div className="flex ">
+            <div className="flex gap-4">
               <a href={project.link} target="_blank">
                 <button className="w-xl p-1 text-xl active:bg-neutral-600 hover:bg-purple-500 bg-purple-700 border-purple-800 rounded mb-4 mt-0 ">
                   See on Github

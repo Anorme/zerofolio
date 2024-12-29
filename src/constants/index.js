@@ -25,6 +25,7 @@ export const PROJECTS = [
       "A fully functional fullstack website that enables users to detect faces in images using AI.",
     technologies: ["HTML", "CSS","JavaScript", "React", "Node.js", "Express.js","PostgreSQL"],
     link: "https://github.com/Anorme/smartbrain-frontend",
+    live: "https://smartbrain-frontend-eight.vercel.app/",
   },
   {
     title: "Portfolio Website",
@@ -32,7 +33,8 @@ export const PROJECTS = [
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "CSS", "React", "JavaScript","TailwindCSS","Framer Motion"],
-    link:"https://github.com/Anorme/coolfolio"
+    link:"https://github.com/Anorme/coolfolio",
+    live:"https://zerofolio.vercel.app/"
   }
 ];
 

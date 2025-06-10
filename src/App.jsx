@@ -18,7 +18,7 @@ const App = () => {
     const observer = new IntersectionObserver ((entries) => {
       entries.forEach((entry) => {
         if(entry.isIntersecting) {
-          setActiveSection(entry.target.id); // Update the active session when it comes into view
+          setActiveSection(entry.target.id); // Update the active section when it comes into view
         }
       });
     }, {threshold: 0.5}); // Trigger when 50% of the section comes into view

@@ -7,7 +7,7 @@ const About = () => {
     <div className="border-b border-neutral-900 pb-4 mb-20">
       <h1 className="my-10 text-center text-4xl">
         About 
-        <span className="text-neutral-500">Me</span>
+        <span className="text-neutral-500 ml-4">Me</span>
       </h1>
       <div className="flex flex-wrap">
         <motion.div

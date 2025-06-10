@@ -44,7 +44,7 @@ const App = () => {
         <div className="absolute inset-y-0 z-[-2] min-h-screen w-full bg-gray-50 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,#d9d8ff7f,#ffffffe5)] dark:bg-gray-950 dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,#7877c64b,rgba(255,255,255,0))]"></div>
       </div>
         <Navbar activeSection={activeSection}/>
-        <div className="container mt-24 mx-auto px-8">
+        <div className="container mt-5 mx-auto px-8">
           <section id="hero"> 
             <Hero /> 
           </section>

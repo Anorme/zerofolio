@@ -2,6 +2,8 @@ import { PROJECTS } from "../constants"
 import {motion} from "motion/react";
 import Tilt from 'react-parallax-tilt';
 import useDeviceType from "./useDeviceType";
+import { BsBoxArrowUpRight } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   const deviceType = useDeviceType();
@@ -22,19 +24,21 @@ const Projects = () => {
               <p className="mb-4 text-neutral-400 text-2xl">{project.description}</p>
             <div className="flex flex-wrap ml-0 my-2">
               {project.technologies.map((tech, index) => (
-                <span key={index} className="mr-2 mb-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-600">{tech}</span>
+                <span key={index} className="mr-2 mb-2 rounded-full bg-gray-700 px-2 py-1 text-sm font-sm text-white-600">{tech}</span>
               ))}
             </div>
             <div className="flex gap-4">
               <a href={project.link} target="_blank">
-                <button className="w-xl p-1 text-xl active:bg-neutral-600 hover:bg-purple-500 bg-purple-700 border-purple-800 rounded mb-4 mt-0 ">
-                  See on Github
-                </button>
+                <div className="w-xl px-4 text-lg active:bg-neutral-600 hover:bg-gray-500 bg-gray-700 border-purple-800 rounded mb-4 mt-0 flex items-center ">
+                  <span className="px-2"><FaGithub/></span>
+                  <span>Code</span>
+                </div>
               </a>
               <a href={project.live} target="_blank">
-                <button className="w-xl p-1 text-xl active:bg-neutral-600 hover:bg-purple-500 bg-purple-700 border-purple-800 rounded mb-4 mt-0 ">
-                  See Live 
-                </button>
+                <div className="w-xl px-4 text-lg text-neutral-900 active:bg-neutral-600 hover:bg-neutral-400 bg-neutral-300 rounded mb-4 mt-0 flex items-center ">
+                  <span className="px-2"><BsBoxArrowUpRight/></span> 
+                  <span>Live</span> 
+                </div>
               </a>   
             </div>
                      

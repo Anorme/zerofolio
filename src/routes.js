@@ -1,5 +1,4 @@
 import { MdOutlineMarkEmailRead } from "react-icons/md";
-import { BiHomeAlt2 } from "react-icons/bi";
 import { HiMiniCodeBracketSquare } from "react-icons/hi2";
 import { FaHome } from "react-icons/fa";
 import { FcAbout } from "react-icons/fc";

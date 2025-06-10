@@ -3,13 +3,13 @@ import NavMobile from "./NavMobile";
 
 import useDeviceType from "./useDeviceType";
 
-const Navbar = ({activeSession}) => {
+const Navbar = ({activeSection}) => {
   const deviceType = useDeviceType();
 
   return (
     <>
       {
-        deviceType === 'desktop' ? <NavDesktop activeSession={activeSession} /> : <NavMobile />
+        deviceType === 'desktop' ? <NavDesktop activeSection={activeSection} /> : <NavMobile />
       }      
     </>
   );

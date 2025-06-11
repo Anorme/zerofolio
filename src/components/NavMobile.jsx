@@ -15,7 +15,7 @@ const NavMobile = () => {
     <div className="fixed z-40 top-0 left-0 right-0 bg-neutral-950 border-none ">
       <nav className=" w-full flex items-center justify-between px-1 py-1 lg:py-5">
         <div className="flex flex-shrink-0 items-center w-1/2">
-          <span className="text-xl font-semibold ml-4">Anorme Inkumsah</span>
+          <span className="text-xl font-semibold ml-4 whitespace-nowrap">Anorme Inkumsah</span>
         </div>
         <div ref={ref} className="lg:hidden mr-2">
           <Hamburger toggled={isOpen} size={20} toggle={setOpen} />

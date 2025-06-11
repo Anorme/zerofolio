@@ -8,7 +8,7 @@ const FooterMobile = () => {
         const { name, Icon } = contact;
         return (
           <div key={i} className="flex items-center flex-wrap justify-center text-center tracking-tighter mb-2">
-            <div className="flex items-center">
+            <div className="flex items-center place-content-center">
               <Icon className="mr-2" />
               <span>{name}</span>
             </div>

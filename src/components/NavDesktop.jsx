@@ -13,7 +13,7 @@ const NavDesktop = ({activeSection}) => {
               return(
                 <div
                   key={i} 
-                  className="mb-2 cursor-pointer pt-2"> 
+                  className="mb-2 cursor-pointer pt-2 z-20"> 
                     <a href={link} target="_blank" rel="noopener noreferrer" className="flex items-center" >
                     <Icon className="bg-white-500 ml-2" />
                     </a> 

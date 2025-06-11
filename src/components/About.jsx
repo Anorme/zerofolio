@@ -1,4 +1,4 @@
-import aboutImg from "../assets/CyberAI.jpg"
+import aboutImg from "../assets/AboutImg.jpg"
 import { ABOUT_TEXT } from "../constants"
 import {motion} from "motion/react"
 

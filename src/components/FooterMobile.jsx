@@ -7,13 +7,13 @@ const FooterMobile = () => {
       {CONTACT.map((contact, i) => {
         const { name, Icon } = contact;
         return (
-          <div key={i} className="flex items-center justify-between text-center tracking-tighter mb-2">
+          <div key={i} className="flex items-center flex-wrap justify-center text-center tracking-tighter mb-2">
             <div className="flex items-center">
               <Icon className="mr-2" />
               <span>{name}</span>
             </div>
             {/* Social Media Icons */}
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 py-4">
               {LINKS.map((linkInfo, j) => {
                 const { Icon: LinkIcon, link } = linkInfo;
                 return (

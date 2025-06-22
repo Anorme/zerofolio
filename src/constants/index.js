@@ -1,5 +1,6 @@
 import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
+import project3 from "../assets/projects/project-4.png";
 
 import { FaCopyright, FaLinkedin, FaGithub } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
@@ -32,7 +33,16 @@ export const PROJECTS = [
     technologies: [ "JavaScript", "React.js", "Node.js", "Express.js", "MongoDB", "Docker", "AWS EC2"],
     link:"https://github.com/Anorme/nasa-project",
     live:"http://54.174.44.182:8000/launch"
-  }
+  },
+  {
+    title: "Portfolio Website",
+    image: project3,
+    description:
+      "Portfolio displaying projects. ",
+    technologies: [ "JavaScript", "React.js", "TailwindCSS", "Framer-motion"],
+    link:"https://github.com/Anorme/zerofolio",
+    live:"http://anormeinkumsah.com"
+  },
 ];
 
 export const CONTACT = [

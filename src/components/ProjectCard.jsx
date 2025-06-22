@@ -1,5 +1,5 @@
-// import { BsBoxArrowUpRight } from "react-icons/bs";
-// import { FaGithub } from "react-icons/fa";
+import { BsBoxArrowUpRight } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
 
 const ProjectCard = ({ title, description, imageUrl, liveLink, repoLink }) => {
   return (
@@ -13,17 +13,24 @@ const ProjectCard = ({ title, description, imageUrl, liveLink, repoLink }) => {
             href={liveLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-600 text-white text-xs md:text-sm p-1 rounded hover:bg-blue-500 transition"
+            className="bg-blue-600 text-white text-xs md:text-lg px-1 rounded hover:bg-blue-500 transition"
           >
-            View Live
+            <div className="flex items-center space-x-2">
+              <BsBoxArrowUpRight className="" />
+              <span>Live</span>
+            </div>
+            
           </a>
           <a
             href={repoLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-400 hover:underline transition text-xs md:text-sm"
+            className="text-blue-400 hover:underline transition text-xs md:text-lg"
           >
-            View Code
+            <div className="flex items-center space-x-2">
+              <FaGithub className="" />
+              <span>Code</span>
+            </div>
           </a>
         </div>
       </div>

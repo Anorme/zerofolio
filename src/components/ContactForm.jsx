@@ -10,8 +10,8 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="border-b border-neutral-900 pb-20 flex justify-center">
-    <section className="body-font relative bg-gray-900 text-gray-400 ">
+    <div className="border-b border-border pb-20 flex justify-center">
+    <section className="body-font relative bg-bg text-text-secondary">
       <div className="flex justify-center" ref={formRef}>
         {isInView && (
           <DotLottieReact
@@ -25,8 +25,8 @@ const ContactForm = () => {
 
       <div className="container pt-0 mx-auto px-5 py-24">
         <div className="mb-12 flex w-full flex-col text-center">
-          <h1 className="title-font mb-4 text-2xl font-medium text-white sm:text-3xl">Contact me</h1>
-          <p className="mx-auto text-base leading-relaxed lg:w-2/3">Feel free to reach out to me! Whether you have a question,
+          <h1 className="title-font mb-4 text-2xl font-medium text-text sm:text-3xl">Contact me</h1>
+          <p className="mx-auto text-base leading-relaxed lg:w-2/3 text-text-muted">Feel free to reach out to me! Whether you have a question,
             feedback, or a collaboration proposal, I would love to hear from you.
           </p>
         </div>
@@ -43,10 +43,10 @@ const ContactForm = () => {
                   type="text" 
                   id="name" 
                   name="name" 
-                  className="peer w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900" 
+                  className="peer w-full rounded border border-border bg-card py-1 px-3 text-base leading-8 text-text placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-primary focus:bg-card-hover focus:ring-2 focus:ring-primary-light" 
                   placeholder="Name"                  
                 />
-                <label htmlFor="name" className="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500">Name</label>
+                <label htmlFor="name" className="absolute left-3 -top-6 bg-bg text-sm leading-7 text-primary transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-bg peer-placeholder-shown:text-base peer-placeholder-shown:text-text-muted peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-primary">Name</label>
               </div>
             </div>
             <div className="w-1/2 p-2">
@@ -55,7 +55,7 @@ const ContactForm = () => {
                   type="email" 
                   id="email" 
                   name="email" 
-                  className="peer w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900" 
+                  className="peer w-full rounded border border-border bg-card py-1 px-3 text-base leading-8 text-text placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-primary focus:bg-card-hover focus:ring-2 focus:ring-primary-light" 
                   placeholder="Email"
                   required={true}                  
                 />
@@ -64,7 +64,7 @@ const ContactForm = () => {
                   field="email"
                   errors={state.errors}
                 />
-                <label htmlFor="email" className="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500">Email</label>
+                <label htmlFor="email" className="absolute left-3 -top-6 bg-bg text-sm leading-7 text-primary transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-bg peer-placeholder-shown:text-base peer-placeholder-shown:text-text-muted peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-primary">Email</label>
               </div>
             </div>
             <div className="w-full p-2">
@@ -74,7 +74,7 @@ const ContactForm = () => {
                 <textarea 
                   id="message" 
                   name="message" 
-                  className="peer h-32 w-full resize-none rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-6 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900" 
+                  className="peer h-32 w-full resize-none rounded border border-border bg-card py-1 px-3 text-base leading-6 text-text placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-primary focus:bg-card-hover focus:ring-2 focus:ring-primary-light" 
                   placeholder="Message"
                   required={true}                  
                 />
@@ -83,14 +83,14 @@ const ContactForm = () => {
                   field="message"
                   errors={state.errors}
                 />
-                <label htmlFor="message" className="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500">Message</label>
+                <label htmlFor="message" className="absolute left-3 -top-6 bg-bg text-sm leading-7 text-primary transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-bg peer-placeholder-shown:text-base peer-placeholder-shown:text-text-muted peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-primary">Message</label>
               </div>
             </div>
             <div className="w-full p-2">
               <button
                 type='submit' 
                 disabled={state.submitting}
-                className="mx-auto flex rounded border-0 bg-indigo-500 py-2 px-8 text-lg text-white hover:bg-indigo-600 focus:outline-none"
+                className="mx-auto flex rounded border-0 bg-primary py-2 px-8 text-lg text-bg hover:bg-primary-hover focus:outline-none transition-colors duration-200"
               >
                 Submit
               </button>

@@ -20,35 +20,35 @@ const iconVariants = (duration) => ({
 
 // Array of technology items
 const technologies = [
-  { icon: <FaHtml5 className="text-7xl text-orange-400" />, duration: 4 },
-  { icon: <FaCss3 className="text-7xl text-blue-400" />, duration: 2 },
-  { icon: <BiLogoJavascript className="text-7xl text-yellow-400" />, duration: 4 },
-  { icon: <SiTypescript className="text-7xl text-blue-600" />, duration: 3 },
-  { icon: <RiReactjsLine className="text-7xl text-cyan-400" />, duration: 2 },
-  { icon: <SiNextdotjs className="text-7xl text-gray-900" />, duration: 3 },
-  { icon: <FaNodeJs className="text-7xl text-green-500" />, duration: 4 },
-  { icon: <SiExpress className="text-7xl text-cyan-400" />, duration: 2.5 },
-  { icon: <SiMongodb className="text-7xl text-green-600" />, duration: 3 },
-  { icon: <BiLogoPostgresql className="text-7xl text-sky-700" />, duration: 3 },
-  { icon: <SiRedux className="text-7xl text-purple-600" />, duration: 3 },
+  { icon: <FaHtml5 className="text-7xl text-tech-html" />, duration: 4 },
+  { icon: <FaCss3 className="text-7xl text-tech-css" />, duration: 2 },
+  { icon: <BiLogoJavascript className="text-7xl text-tech-js" />, duration: 4 },
+  { icon: <SiTypescript className="text-7xl text-tech-ts" />, duration: 3 },
+  { icon: <RiReactjsLine className="text-7xl text-tech-react" />, duration: 2 },
+  { icon: <SiNextdotjs className="text-7xl text-tech-next" />, duration: 3 },
+  { icon: <FaNodeJs className="text-7xl text-tech-node" />, duration: 4 },
+  { icon: <SiExpress className="text-7xl text-tech-express" />, duration: 2.5 },
+  { icon: <SiMongodb className="text-7xl text-tech-mongo" />, duration: 3 },
+  { icon: <BiLogoPostgresql className="text-7xl text-tech-postgres" />, duration: 3 },
+  { icon: <SiRedux className="text-7xl text-tech-redux" />, duration: 3 },
   { icon: <SiReduxsaga className="text-7xl text-orange-500" />, duration: 3 },
-  { icon: <SiFirebase className="text-7xl text-yellow-400" />, duration: 2.5 },
-  { icon: <SiSupabase className="text-7xl text-blue-600" />, duration: 3 },
-  { icon: <SiJest className="text-7xl text-gray-600" />, duration: 2.5 },
-  { icon: <SiDocker className="text-7xl text-blue-400" />, duration: 3 },
-  { icon: <FaGitAlt className="text-7xl text-orange-400" />, duration: 4 },
+  { icon: <SiFirebase className="text-7xl text-tech-firebase" />, duration: 2.5 },
+  { icon: <SiSupabase className="text-7xl text-tech-supabase" />, duration: 3 },
+  { icon: <SiJest className="text-7xl text-tech-jest" />, duration: 2.5 },
+  { icon: <SiDocker className="text-7xl text-tech-docker" />, duration: 3 },
+  { icon: <FaGitAlt className="text-7xl text-tech-git" />, duration: 4 },
 ];
 
 const Technologies = () => {
   const deviceType = useDeviceType(); // Determines the type of device being used
 
   return (
-    <div className="border-b border-neutral-800 pb-12"> {/* Outer container with styling */}
+    <div className="border-b border-border pb-12"> {/* Outer container with styling */}
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }} // Animation when element comes into view
         initial={{ opacity: 0, y: -100 }} // Initial state for the heading
         transition={{ duration: 1.5 }} // Duration of the transition effect
-        className="my-10 text-center text-4xl" // Tailwind CSS classes for spacing and text size
+        className="my-10 text-center text-4xl text-text" // Tailwind CSS classes for spacing and text size
       >
         Technologies
       </motion.h1>
@@ -60,7 +60,7 @@ const Technologies = () => {
             variants={iconVariants(tech.duration)} // Assigns animation variants
             initial="initial" // Initial state for the icon animation
             animate={deviceType === 'desktop' ? "animate" : undefined} // Run animation only on desktop
-            className="rounded-2xl border-4 border-neutral-800 p-4" // Styling for each icon container
+            className="rounded-2xl border-4 border-border p-4 bg-card hover:bg-card-hover transition-colors duration-200" // Styling for each icon container
           >
             {tech.icon} 
           </motion.div>
@@ -70,4 +70,4 @@ const Technologies = () => {
   );
 }
 
-export default Technologies; // Exports the Technologies component for use in other files
+export default Technologies; 

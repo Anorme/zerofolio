@@ -39,9 +39,9 @@ const App = () => {
   },[]);
 
   return (
-    <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">
+    <div className="overflow-x-hidden text-text antialiased selection:bg-primary-light selection:text-primary">
       <div className="fixed top-0 -z-10 h-full w-full">
-        <div className="absolute inset-y-0 z-[-2] min-h-screen w-full bg-gray-50 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,#d9d8ff7f,#ffffffe5)] dark:bg-gray-950 dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,#7877c64b,rgba(255,255,255,0))]"></div>
+        <div className="absolute inset-y-0 z-[-2] min-h-screen w-full bg-bg bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,var(--color-primary-light),var(--color-background))]"></div>
       </div>
         <Navbar activeSection={activeSection}/>
         <div className="container mt-5 mx-auto px-8">

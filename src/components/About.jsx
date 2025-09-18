@@ -4,10 +4,10 @@ import {motion} from "motion/react"
 
 const About = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4 mb-20">
-      <h1 className="my-10 text-center text-4xl">
+    <div className="border-b border-border pb-4 mb-20">
+      <h1 className="my-10 text-center text-4xl text-text">
         About 
-        <span className="text-neutral-500 ml-4">Me</span>
+        <span className="text-text-muted ml-4">Me</span>
       </h1>
       <div className="flex flex-wrap">
         <motion.div
@@ -28,7 +28,7 @@ const About = () => {
             >
               <div className="my-4 max-w-xl lg:pt-12">
                   {ABOUT_TEXT.map((paragraph, index) => (
-                     <p key={index} className="mb-4"> {paragraph} </p>
+                     <p key={index} className="mb-4 text-text-secondary"> {paragraph} </p>
                   ))}
               </div>
             </motion.div>

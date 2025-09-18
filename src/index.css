@@ -7,3 +7,132 @@
 :root {
   font-family: "Quicksand", sans-serif;
 }
+
+/* Initialize CSS variables with default dark theme values */
+:root {
+  --color-background: #0f172a;
+  --color-background-secondary: #1e293b;
+  --color-background-tertiary: #334155;
+  --color-text: #f1f5f9;
+  --color-text-secondary: #cbd5e1;
+  --color-text-muted: #94a3b8;
+  --color-primary: #3b82f6;
+  --color-primary-hover: #60a5fa;
+  --color-primary-light: #1e3a8a;
+  --color-secondary: #6366f1;
+  --color-secondary-hover: #818cf8;
+  --color-accent: #06b6d4;
+  --color-accent-hover: #22d3ee;
+  --color-neutral: #94a3b8;
+  --color-neutral-light: #475569;
+  --color-neutral-dark: #e2e8f0;
+  --color-border: #334155;
+  --color-border-dark: #475569;
+  --color-card: #1e293b;
+  --color-card-hover: #334155;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-tech-html: #f97316;
+  --color-tech-css: #3b82f6;
+  --color-tech-js: #fbbf24;
+  --color-tech-ts: #2563eb;
+  --color-tech-react: #06b6d4;
+  --color-tech-next: #ffffff;
+  --color-tech-node: #22c55e;
+  --color-tech-express: #06b6d4;
+  --color-tech-mongo: #22c55e;
+  --color-tech-postgres: #0ea5e9;
+  --color-tech-redux: #8b5cf6;
+  --color-tech-firebase: #fbbf24;
+  --color-tech-supabase: #2563eb;
+  --color-tech-jest: #64748b;
+  --color-tech-docker: #3b82f6;
+  --color-tech-git: #f97316;
+}
+
+/* Dark theme variables */
+.dark {
+  --color-background: #0f172a;
+  --color-background-secondary: #1e293b;
+  --color-background-tertiary: #334155;
+  --color-text: #f1f5f9;
+  --color-text-secondary: #cbd5e1;
+  --color-text-muted: #94a3b8;
+  --color-primary: #3b82f6;
+  --color-primary-hover: #60a5fa;
+  --color-primary-light: #1e3a8a;
+  --color-secondary: #6366f1;
+  --color-secondary-hover: #818cf8;
+  --color-accent: #06b6d4;
+  --color-accent-hover: #22d3ee;
+  --color-neutral: #94a3b8;
+  --color-neutral-light: #475569;
+  --color-neutral-dark: #e2e8f0;
+  --color-border: #334155;
+  --color-border-dark: #475569;
+  --color-card: #1e293b;
+  --color-card-hover: #334155;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-tech-html: #f97316;
+  --color-tech-css: #3b82f6;
+  --color-tech-js: #fbbf24;
+  --color-tech-ts: #2563eb;
+  --color-tech-react: #06b6d4;
+  --color-tech-next: #ffffff;
+  --color-tech-node: #22c55e;
+  --color-tech-express: #06b6d4;
+  --color-tech-mongo: #22c55e;
+  --color-tech-postgres: #0ea5e9;
+  --color-tech-redux: #8b5cf6;
+  --color-tech-firebase: #fbbf24;
+  --color-tech-supabase: #2563eb;
+  --color-tech-jest: #64748b;
+  --color-tech-docker: #3b82f6;
+  --color-tech-git: #f97316;
+}
+
+/* Light theme variables */
+.light {
+  --color-background: #ffffff;
+  --color-background-secondary: #f8fafc;
+  --color-background-tertiary: #f1f5f9;
+  --color-text: #1e293b;
+  --color-text-secondary: #64748b;
+  --color-text-muted: #94a3b8;
+  --color-primary: #3b82f6;
+  --color-primary-hover: #2563eb;
+  --color-primary-light: #dbeafe;
+  --color-secondary: #6366f1;
+  --color-secondary-hover: #4f46e5;
+  --color-accent: #06b6d4;
+  --color-accent-hover: #0891b2;
+  --color-neutral: #64748b;
+  --color-neutral-light: #e2e8f0;
+  --color-neutral-dark: #334155;
+  --color-border: #e2e8f0;
+  --color-border-dark: #cbd5e1;
+  --color-card: #ffffff;
+  --color-card-hover: #f8fafc;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-tech-html: #f97316;
+  --color-tech-css: #3b82f6;
+  --color-tech-js: #fbbf24;
+  --color-tech-ts: #2563eb;
+  --color-tech-react: #06b6d4;
+  --color-tech-next: #000000;
+  --color-tech-node: #22c55e;
+  --color-tech-express: #06b6d4;
+  --color-tech-mongo: #22c55e;
+  --color-tech-postgres: #0ea5e9;
+  --color-tech-redux: #8b5cf6;
+  --color-tech-firebase: #fbbf24;
+  --color-tech-supabase: #2563eb;
+  --color-tech-jest: #64748b;
+  --color-tech-docker: #3b82f6;
+  --color-tech-git: #f97316;
+}

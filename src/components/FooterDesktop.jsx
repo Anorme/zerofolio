@@ -3,8 +3,8 @@ import { LINKS } from "../constants";
 
 const FooterDesktop = () => {
   return (
-    <div className="hidden border-t border-neutral-900 lg:pt-20 lg:flex justify-between items-center p-4">
-      <div className="flex items-center">
+    <div className="hidden border-t border-border lg:pt-20 lg:flex justify-between items-center p-4">
+      <div className="flex items-center text-text-secondary">
         {CONTACT.map((contact, i) => {
           const { name, Icon } = contact;
           return (
@@ -26,7 +26,7 @@ const FooterDesktop = () => {
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline flex items-center"
+              className="text-primary hover:underline flex items-center transition-colors duration-200"
             >
               <Icon className="h-6 w-6" /> 
             </a>

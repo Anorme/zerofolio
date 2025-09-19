@@ -19,9 +19,11 @@ const Projects = () => {
                 key={`${project.title}-${index}`}
                 title={project.title}
                 description={project.description}
-                imageUrl={project.image}
-                liveLink={project.live}
-                repoLink={project.link}
+                image={project.image}
+                technologies={project.technologies}
+                link={project.link}
+                live={project.live}
+                status={project.status}
               />
             ))
           }

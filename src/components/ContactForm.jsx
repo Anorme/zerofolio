@@ -92,7 +92,7 @@ const ContactForm = () => {
                 disabled={state.submitting}
                 className="mx-auto flex rounded border-0 bg-primary py-2 px-8 text-lg text-bg hover:bg-primary-hover focus:outline-none transition-colors duration-200"
               >
-                Submit
+                Send
               </button>
             </div>
           </form>

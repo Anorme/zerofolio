@@ -39,7 +39,7 @@ export const PROJECTS = [
     title: "Space Mission Scheduling API",
     image: project2,
     description:
-      "A full-stack space exploration dashboard that simulates mission planning to habitable exoplanets. The frontend UI enables users to browse historical SpaceX launches and schedule new missions, while the backend integrates real-time data from the SpaceX API and filters planetary candidates from NASA&#39;s Kepler dataset using a custom habitability utility.",
+      "A full-stack space exploration dashboard that simulates mission planning to habitable exoplanets. The frontend UI enables users to browse historical SpaceX launches and schedule new missions, while the backend integrates real-time data from the SpaceX API and filters planetary candidates from NASA's Kepler dataset using a custom habitability utility.",
     technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Docker", "AWS EC2"],
     link:"https://github.com/Anorme/nasa-project",
     status: "completed"

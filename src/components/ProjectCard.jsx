@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 const ProjectCard = ({ title, description, image, technologies, link, live, status }) => {
+  const [showAllTech, setShowAllTech] = useState(false);
+  const [showFullDescription, setShowFullDescription] = useState(false);
   return (
     <div className="w-full max-w-sm h-[350px] md:h-[400px] border border-border rounded-lg overflow-hidden shadow-lg bg-card hover:bg-card-hover transition-colors duration-200 flex flex-col">
       {/* Image container with overlay buttons */}
@@ -50,12 +54,30 @@ const ProjectCard = ({ title, description, image, technologies, link, live, stat
       <div className="p-4 flex flex-col justify-between flex-grow">
         <div>
           <h2 className="text-lg font-bold text-text mb-2 line-clamp-2">{title}</h2>
-          <p className="text-sm text-text-secondary mb-4 line-clamp-3">{description}</p>
+          <div className="mb-4">
+            <p className={`text-sm text-text-secondary ${showFullDescription ? '' : 'line-clamp-3'}`}>
+              {description}
+            </p>
+            {description.length > 100 && (
+              <button
+                onClick={() => setShowFullDescription(!showFullDescription)}
+                className="text-xs text-primary hover:text-primary-hover transition-colors duration-200 flex items-center gap-1 mt-1 font-medium"
+                aria-label={showFullDescription ? 'Show less description' : 'Show full description'}
+              >
+                {showFullDescription ? 'Read less' : 'Read more'}
+                {showFullDescription ? (
+                  <ChevronUp className="w-3 h-3" />
+                ) : (
+                  <ChevronDown className="w-3 h-3" />
+                )}
+              </button>
+            )}
+          </div>
         </div>
         
         {/* Technology tags */}
         <div className="flex flex-wrap gap-2">
-          {technologies.slice(0, 3).map((tech, index) => (
+          {technologies.slice(0, showAllTech ? technologies.length : 3).map((tech, index) => (
             <span
               key={index}
               className="bg-secondary text-bg text-xs px-2 py-1 rounded-full font-medium"
@@ -64,9 +86,18 @@ const ProjectCard = ({ title, description, image, technologies, link, live, stat
             </span>
           ))}
           {technologies.length > 3 && (
-            <span className="bg-neutral text-text text-xs px-2 py-1 rounded-full font-medium">
-              +{technologies.length - 3} more
-            </span>
+            <button
+              onClick={() => setShowAllTech(!showAllTech)}
+              className="bg-neutral text-text hover:bg-neutral-light hover:text-text-secondary text-xs px-2 py-1 rounded-full font-medium transition-colors duration-200 flex items-center gap-1"
+              aria-label={showAllTech ? 'Show fewer technologies' : 'Show all technologies'}
+            >
+              {showAllTech ? 'Show less' : `+${technologies.length - 3} more`}
+              {showAllTech ? (
+                <ChevronUp className="w-3 h-3" />
+              ) : (
+                <ChevronDown className="w-3 h-3" />
+              )}
+            </button>
           )}
         </div>
       </div>

@@ -8,10 +8,10 @@ import { CiMail } from "react-icons/ci";
 export const HERO_CONTENT = `I am the fullstack developer you need.`;
 
 export const ABOUT_TEXT = [
-  "You’ve got a vision, maybe a startup, a product, or a platform but you need someone who can turn that into reality. Not just with code, but with leadership, strategy, and relentless execution.",
+  "You've got a vision, maybe a startup, a product, or a platform but you need someone who can turn that into reality. Not just with code, but with leadership, strategy, and relentless execution.",
   "With hands-on experience leading a cross-functional team building fullstack projects like the misqabbi e-commerce store, I have honed my skills in the MERN stack and proven my capacity for leadership, strategy, and execution.",
   "I consistently leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.",
-  "If you know what you want and when I’ll handle the how."
+  "If you know what you want and when I'll handle the how."
 ];
 
 
@@ -20,7 +20,7 @@ export const PROJECTS = [
     title: "Nyxtern landing page",
     image: project1,
     description:
-      "Landing page for job marketplace platform",
+      "Landing page for nyxtern a peer led project marketplace platform.",
     technologies: ["TypeScript", "Next.js", "TailwindCSS", "Shadcn UI"],
     live: "https://nyxtern-landing.vercel.app/",
     status: "completed"
@@ -29,8 +29,8 @@ export const PROJECTS = [
     title: "Misqabbi E-commerce Store",
     image: project3,
     description:
-      "E-commerce store for Misqabbi, a clothing brand. ",
-    technologies: ["React.js", "TailwindCSS", "Context API"],
+      "An ecommerce platform dedicated to showcasing Misqabbi, a women-owned fashion brand specializing in made-to-measure pieces designed exclusively for women.",
+    technologies: ["React.js", "TailwindCSS", "Context API", "MongoDB", "Node.js", "Express.js", "Axios", "Passport.js", "JWT"],
     link:"https://github.com/Anorme/misqabbi-frontend",
     live:"https://misqabbigh.netlify.app/",
     status: "in-progress"
@@ -39,7 +39,7 @@ export const PROJECTS = [
     title: "Space Mission Scheduling API",
     image: project2,
     description:
-      "Integrated MongoDB to manage mission data, ensuring seamless updates and rapid retrieval. ",
+      "A full-stack space exploration dashboard that simulates mission planning to habitable exoplanets. The frontend UI enables users to browse historical SpaceX launches and schedule new missions, while the backend integrates real-time data from the SpaceX API and filters planetary candidates from NASA&#39;s Kepler dataset using a custom habitability utility.",
     technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Docker", "AWS EC2"],
     link:"https://github.com/Anorme/nasa-project",
     status: "completed"

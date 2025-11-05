@@ -63,6 +63,7 @@ export const lightTheme = {
     supabase: '#2563eb', // blue-600
     jest: '#64748b', // slate-500
     docker: '#3b82f6', // blue-500
+    redis: '#dc2626', // red-600
     git: '#f97316', // orange-500
   }
 };
@@ -127,6 +128,7 @@ export const darkTheme = {
     supabase: '#2563eb', // blue-600
     jest: '#64748b', // slate-500
     docker: '#3b82f6', // blue-500
+    redis: '#dc2626', // red-600
     git: '#f97316', // orange-500
   }
 };

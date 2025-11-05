@@ -22,7 +22,7 @@ export const PROJECTS = [
     description:
       "Landing page for nyxtern a peer led project marketplace platform.",
     technologies: [ "Next.js","Shadcn UI",  "TypeScript", "TailwindCSS", "Framer-motion" ],
-    live: "https://nyxtern-landing.vercel.app/",
+    live: "https://nyxtern.com/",
     status: "completed"
   },
   {
@@ -30,9 +30,9 @@ export const PROJECTS = [
     image: project3,
     description:
       "An ecommerce platform dedicated to showcasing Misqabbi, a women-owned fashion brand specializing in made-to-measure pieces designed exclusively for women.",
-    technologies: ["React.js", "TailwindCSS", "Context API", "MongoDB", "Node.js", "Express.js", "Axios", "Passport.js", "JWT"],
+    technologies: ["React.js", "TailwindCSS", "Context API", "MongoDB", "Node.js", "Express.js", "Redis", "Docker"],
     link:"https://github.com/Anorme/misqabbi-frontend",
-    live:"https://misqabbigh.netlify.app/",
+    live:"https://misqabbigh.com",
     status: "in-progress"
   },
   {

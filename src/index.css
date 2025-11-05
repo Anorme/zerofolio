@@ -48,6 +48,7 @@
   --color-tech-supabase: #2563eb;
   --color-tech-jest: #64748b;
   --color-tech-docker: #3b82f6;
+  --color-tech-redis: #dc2626;
   --color-tech-git: #f97316;
 }
 
@@ -91,6 +92,7 @@
   --color-tech-supabase: #2563eb;
   --color-tech-jest: #64748b;
   --color-tech-docker: #3b82f6;
+  --color-tech-redis: #dc2626;
   --color-tech-git: #f97316;
 }
 
@@ -134,5 +136,6 @@
   --color-tech-supabase: #2563eb;
   --color-tech-jest: #64748b;
   --color-tech-docker: #3b82f6;
+  --color-tech-redis: #dc2626;
   --color-tech-git: #f97316;
 }

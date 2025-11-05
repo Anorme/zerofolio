@@ -2,7 +2,7 @@ import useDeviceType from './useDeviceType';
 import { BiLogoJavascript, BiLogoPostgresql } from "react-icons/bi";
 import { RiReactjsLine } from "react-icons/ri";
 import { FaNodeJs, FaGitAlt, FaHtml5, FaCss3 } from "react-icons/fa";
-import { SiExpress, SiMongodb, SiTypescript, SiRedux, SiReduxsaga, SiNextdotjs, SiFirebase, SiJest, SiSupabase, SiDocker } from "react-icons/si"; // Import all required icons
+import { SiExpress, SiMongodb, SiTypescript, SiRedux, SiReduxsaga, SiNextdotjs, SiFirebase, SiJest, SiSupabase, SiDocker, SiRedis } from "react-icons/si"; // Import all required icons
 import { motion } from "motion/react"; // Using the motion library for animations
 
 const iconVariants = (duration) => ({
@@ -36,6 +36,7 @@ const technologies = [
   { icon: <SiSupabase className="text-7xl text-tech-supabase" />, duration: 3 },
   { icon: <SiJest className="text-7xl text-tech-jest" />, duration: 2.5 },
   { icon: <SiDocker className="text-7xl text-tech-docker" />, duration: 3 },
+  { icon: <SiRedis className="text-7xl text-tech-redis" />, duration: 3 },
   { icon: <FaGitAlt className="text-7xl text-tech-git" />, duration: 4 },
 ];
 

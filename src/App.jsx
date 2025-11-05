@@ -45,22 +45,22 @@ const App = () => {
       </div>
         <Navbar activeSection={activeSection}/>
         <div className="container mt-5 mx-auto px-8">
-          <section id="hero"> 
+          <section id="hero" className="min-h-screen"> 
             <Hero /> 
           </section>
-          <section id="technologies"> 
+          <section id="technologies" className="py-12 sm:py-16 lg:py-20"> 
             <Technologies /> 
           </section>
-          <section id="projects"> 
+          <section id="projects" className="py-12 sm:py-16 lg:py-20"> 
             <Projects /> 
           </section>
-          <section id="about"> 
+          <section id="about" className="py-12 sm:py-16 lg:py-20"> 
             <About /> 
           </section>
-          <section id="contact"> 
+          <section id="contact" className="py-12 sm:py-16 lg:py-20"> 
             <ContactForm /> 
           </section>
-          <section id="footer">
+          <section id="footer" className="py-8 sm:py-12 lg:py-16">
             <Footer />
           </section>
         </div>

@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <div className="text-4xl pb-4 border-b border-border">
+    <div>
       <motion.h2
         whileInView={{opacity: 1, y: 0}}
         initial={{opacity: 0, y: -100}}

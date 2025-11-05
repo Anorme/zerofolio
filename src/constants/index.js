@@ -21,7 +21,7 @@ export const PROJECTS = [
     image: project1,
     description:
       "Landing page for nyxtern a peer led project marketplace platform.",
-    technologies: ["TypeScript", "Next.js", "TailwindCSS", "Shadcn UI"],
+    technologies: [ "Next.js","Shadcn UI",  "TypeScript", "TailwindCSS", "Framer-motion" ],
     live: "https://nyxtern-landing.vercel.app/",
     status: "completed"
   },

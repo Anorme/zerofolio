@@ -30,10 +30,10 @@ const ProjectCard = ({ title, description, image, technologies, link, live, stat
               href={live}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary rounded-full hover:text-secondary-hover transition-colors duration-200 flex items-center gap-2 font-medium"
+              className="text-primary hover:text-primary-hover transition-colors duration-200"
               aria-label={`View live demo of ${title}`}
             >
-              <BsBoxArrowUpRight className="w-full h-full" />
+              <BsBoxArrowUpRight className="text-4xl" />
             </a>
           )}
           {link && (
@@ -41,10 +41,10 @@ const ProjectCard = ({ title, description, image, technologies, link, live, stat
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-secondary text-bg rounded-full hover:text-secondary-hover hover:bg-white transition-colors duration-200 flex items-center gap-2 font-medium"
+              className="text-text hover:text-primary transition-colors duration-200"
               aria-label={`View source code for ${title}`}
             >
-              <FaGithub className="w-full h-full" />
+              <FaGithub className="text-4xl" />
             </a>
           )}
         </div>

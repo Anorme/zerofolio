@@ -44,7 +44,7 @@ const Technologies = () => {
   const deviceType = useDeviceType(); // Determines the type of device being used
 
   return (
-    <div className="border-b border-border pb-12"> {/* Outer container with styling */}
+    <div> {/* Outer container with styling */}
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }} // Animation when element comes into view
         initial={{ opacity: 0, y: -100 }} // Initial state for the heading

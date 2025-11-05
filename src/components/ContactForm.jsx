@@ -10,7 +10,7 @@ const ContactForm = () => {
   // Success state with better UI
   if (state.succeeded) {
     return (
-      <div className="pb-8 sm:pb-12 lg:pb-20">
+      <div>
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -47,9 +47,9 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="pb-8 sm:pb-12 lg:pb-20">
+    <div>
       <section className="relative">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-12">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header Section */}
           <motion.div
             initial={{ opacity: 0, y: -30 }}

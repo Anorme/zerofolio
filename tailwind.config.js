@@ -64,6 +64,7 @@ export default {
           supabase: 'var(--color-tech-supabase)',
           jest: 'var(--color-tech-jest)',
           docker: 'var(--color-tech-docker)',
+          redis: 'var(--color-tech-redis)',
           git: 'var(--color-tech-git)',
         },
       },

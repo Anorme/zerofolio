@@ -17,6 +17,16 @@ export const ABOUT_TEXT = [
 
 export const PROJECTS = [
   {
+    title: "Misqabbi E-commerce Store",
+    image: project3,
+    description:
+      "An ecommerce platform dedicated to showcasing Misqabbi, a women-owned fashion brand specializing in made-to-measure pieces designed exclusively for women.",
+    technologies: ["React.js", "TailwindCSS", "Context API", "MongoDB", "Node.js", "Express.js", "Axios", "Passport.js", "JWT"],
+    link:"https://github.com/Anorme/misqabbi-frontend",
+    live:"https://misqabbigh.netlify.app/",
+    status: "completed"
+  },
+  {
     title: "Nyxtern landing page",
     image: project1,
     description:
@@ -26,25 +36,14 @@ export const PROJECTS = [
     status: "completed"
   },
   {
-    title: "Misqabbi E-commerce Store",
-    image: project3,
-    description:
-      "An ecommerce platform dedicated to showcasing Misqabbi, a women-owned fashion brand specializing in made-to-measure pieces designed exclusively for women.",
-    technologies: ["React.js", "TailwindCSS", "Context API", "MongoDB", "Node.js", "Express.js", "Redis", "Docker"],
-    link:"https://github.com/Anorme/misqabbi-frontend",
-    live:"https://misqabbigh.com",
-    status: "in-progress"
-  },
-  {
-    title: "Space Mission Scheduling API",
+    title: "Hotel Booking System",
     image: project2,
     description:
-      "A full-stack space exploration dashboard that simulates mission planning to habitable exoplanets. The frontend UI enables users to browse historical SpaceX launches and schedule new missions, while the backend integrates real-time data from the SpaceX API and filters planetary candidates from NASA's Kepler dataset using a custom habitability utility.",
-    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Docker", "AWS EC2"],
-    link:"https://github.com/Anorme/nasa-project",
-    status: "completed"
-  },
-  
+      "Landing page for JazCaf Guest House. Complete with a booking system and a contact form.",
+    technologies: ["TypeScript", "React.js", "TailwindCSS", "Supabase"],
+    live:"https://booking-system.vercel.app/",
+    status: "in-progress"
+  }
 ];
 
 export const CONTACT = [

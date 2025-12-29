@@ -41,7 +41,7 @@ export const PROJECTS = [
     description:
       "Landing page for JazCaf Guest House. Complete with a booking system and a contact form.",
     technologies: ["TypeScript", "Next.js", "Shadcn UI", "TailwindCSS", "Supabase"],
-    live:"https://booking-system.vercel.app/",
+    live:"https://booking-sytem.vercel.app/",
     status: "in-progress"
   }
 ];

@@ -31,7 +31,7 @@ export const PROJECTS = [
     image: project1,
     description:
       "Landing page for nyxtern a peer led project marketplace platform.",
-    technologies: [ "Next.js","Shadcn UI",  "TypeScript", "TailwindCSS", "Framer-motion" ],
+    technologies: [ "TypeScript", "Next.js","Shadcn UI", "TailwindCSS", "Framer-motion" ],
     live: "https://nyxtern.com/",
     status: "completed"
   },
@@ -40,7 +40,7 @@ export const PROJECTS = [
     image: project2,
     description:
       "Landing page for JazCaf Guest House. Complete with a booking system and a contact form.",
-    technologies: ["TypeScript", "React.js", "TailwindCSS", "Supabase"],
+    technologies: ["TypeScript", "Next.js", "Shadcn UI", "TailwindCSS", "Supabase"],
     live:"https://booking-system.vercel.app/",
     status: "in-progress"
   }

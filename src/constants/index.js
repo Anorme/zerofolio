@@ -23,7 +23,7 @@ export const PROJECTS = [
       "An ecommerce platform dedicated to showcasing Misqabbi, a women-owned fashion brand specializing in made-to-measure pieces designed exclusively for women.",
     technologies: ["React.js", "TailwindCSS", "Context API", "MongoDB", "Node.js", "Express.js", "Axios", "Passport.js", "JWT"],
     link:"https://github.com/Anorme/misqabbi-frontend",
-    live:"https://misqabbigh.netlify.app/",
+    live:"https://misqabbigh.com/",
     status: "completed"
   },
   {

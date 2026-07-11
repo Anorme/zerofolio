@@ -8,10 +8,11 @@ import { CiMail } from "react-icons/ci";
 export const HERO_CONTENT = `I am the fullstack developer you need.`;
 
 export const ABOUT_TEXT = [
-  "You've got a vision, maybe a startup, a product, or a platform but you need someone who can turn that into reality. Not just with code, but with leadership, strategy, and relentless execution.",
-  "With hands-on experience leading a cross-functional team building fullstack projects like the misqabbi e-commerce store, I have honed my skills in the MERN stack and proven my capacity for leadership, strategy, and execution.",
-  "I consistently leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.",
-  "If you know what you want and when I'll handle the how."
+  "Ever been told to think outside the box? That makes one of us, I practically live there.",
+  "I've always loved taking apart complex problems and building something new. That was me at 5, pulling apart Legos, then appliances by 12, and eventually code in Scratch, Notepad, and VS Code.",
+  "A little over a year ago, it looked like a fresh bootcamp grad hearing 'you lack experience' from recruiters. So I built it. I recruited a cross-functional team across time zones, built in public, and shipped the Misqabbi e-commerce store, a solution a local business genuinely needed.",
+  "That team went on to the finals of the Stanbic-backed CEF accelerator. That's where Nyxtar Technologies was born, and where I still pitch and build solutions to real problems today.",
+  "Now, I'm looking for the next challenge where I can grow and create impact beyond the code."
 ];
 
 
@@ -21,26 +22,26 @@ export const PROJECTS = [
     image: project3,
     description:
       "An ecommerce platform dedicated to showcasing Misqabbi, a women-owned fashion brand specializing in made-to-measure pieces designed exclusively for women.",
-    technologies: ["React.js", "TailwindCSS", "Context API", "MongoDB", "Node.js", "Express.js", "Axios", "Passport.js", "JWT"],
+    technologies: ["React.js", "TailwindCSS", "Context API", "MongoDB", "Redis", "Node.js", "Express.js", "Axios", "Passport.js", "JWT", "Multer", "Cloudinary", "Docker", "Railway", "Paystack"],
     link:"https://github.com/Anorme/misqabbi-frontend",
     live:"https://misqabbigh.com/",
     status: "completed"
   },
   {
-    title: "Nyxtern landing page",
+    title: "Sesenami Gardens landing page",
     image: project1,
     description:
-      "Landing page for nyxtern a peer led project marketplace platform.",
-    technologies: [ "TypeScript", "Next.js","Shadcn UI", "TailwindCSS", "Framer-motion" ],
-    live: "https://nyxtern.com/",
+      "Landing page for Sesenami Gardens a picnic garden and event venue.",
+    technologies: [ "TypeScript", "Next.js","Shadcn UI", "TailwindCSS", "Framer-motion", "Sanity CMS" ],
+    live: "https://demo.sesenamigardens.com/",
     status: "completed"
   },
   {
     title: "Hotel Booking System",
     image: project2,
     description:
-      "Landing page for JazCaf Guest House. Complete with a booking system and a contact form.",
-    technologies: ["TypeScript", "Next.js", "Shadcn UI", "TailwindCSS", "Supabase"],
+      "A hospitality booking platform designed for JazCaf Guest House. featuring a seamless reservation system with real‑time availability, an AI‑powered guest chat for automated support, a property management dashboard with analytics and promotions, and a CMS‑driven marketing site for easy content updates.",
+    technologies: ["TypeScript", "Next.js", "Shadcn UI", "Vercel", "TailwindCSS", "Supabase", "Sanity CMS", "OpenAI API", "Paystack"],
     live:"https://jazcaf.vercel.app/",
     status: "in-progress"
   }

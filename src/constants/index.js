@@ -5,7 +5,12 @@ import project3 from "../assets/projects/project-3.png";
 import { FaCopyright, FaLinkedin, FaGithub } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 
-export const HERO_CONTENT = `I am the fullstack developer you need.`;
+export const HERO = {
+  name: "Anorme Inkumsah",
+  title: "Software Engineer",
+  description:
+    "Fullstack JavaScript Engineer with a passion for building scalable web applications. Specializing in React.js, Node.js, and Express.js.",
+};
 
 export const ABOUT_TEXT = [
   "Ever been told to think outside the box? That makes one of us, I practically live there.",

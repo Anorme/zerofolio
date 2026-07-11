@@ -1,14 +1,12 @@
 import { Link } from "react-scroll";
+import { HERO } from "../constants";
 
 const HeroSection = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen text-text text-center p-0">
-      <h1 className="text-5xl font-bold mb-12">Anorme Inkumsah</h1>
-      <h2 className="text-xl mb-8 text-text-secondary">Full Stack Developer</h2>
-      <p className="mb-6 text-text-muted">
-      Results-driven JavaScript Engineer with a passion for building scalable web applications. 
-        Specializing in React.js, Node.js, and Express.js.
-      </p>
+      <h1 className="text-5xl font-bold mb-12">{HERO.name}</h1>
+      <h2 className="text-xl mb-8 text-text-secondary">{HERO.title}</h2>
+      <p className="mb-6 text-text-muted">{HERO.description}</p>
       <div className="flex space-x-4">
         <Link 
           to="projects"

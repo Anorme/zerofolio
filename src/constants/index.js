@@ -28,7 +28,7 @@ export const PROJECTS = [
     status: "completed"
   },
   {
-    title: "Sesenami Gardens landing page",
+    title: "Sesenami Gardens Landing Page",
     image: project1,
     description:
       "Landing page for Sesenami Gardens a picnic garden and event venue.",
@@ -37,13 +37,13 @@ export const PROJECTS = [
     status: "completed"
   },
   {
-    title: "Hotel Booking System",
+    title: "JazCaf Guest House Booking System",
     image: project2,
     description:
       "A hospitality booking platform designed for JazCaf Guest House. featuring a seamless reservation system with real‑time availability, an AI‑powered guest chat for automated support, a property management dashboard with analytics and promotions, and a CMS‑driven marketing site for easy content updates.",
     technologies: ["TypeScript", "Next.js", "Shadcn UI", "Vercel", "TailwindCSS", "Supabase", "Sanity CMS", "OpenAI API", "Paystack"],
     live:"https://jazcaf.vercel.app/",
-    status: "in-progress"
+    status: "completed"
   }
 ];
 
